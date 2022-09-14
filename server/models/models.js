@@ -9,7 +9,7 @@ const User = sequelize.define('user',{
 
 })
 
-const Basket = sequelize.define('basket'{
+const Basket = sequelize.define('basket',{
     id: {type: DataTypes.INTEGER, primaryKey: true, autoIncrement:true},
 })
 
@@ -78,7 +78,7 @@ DeviceInfo.belongsTo(Device)
 Type.belongsTo(Brand, { through: TypeBrand })
 Brand.belongsTo(Type, { through: TypeBrand })
 
-module.exports {
+module.exports = {
     User,
     Basket,
     BasketDevice,
